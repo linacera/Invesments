@@ -14,8 +14,8 @@ class Investment {
 
     constructor(id : Int, investmentName : String, investmentAmount : Float) {
         this.id = id
-        this.investmentAmount = investmentAmount
-        this.investmentName = investmentName
+        this.investmentAmount   = investmentAmount
+        this.investmentName    = investmentName
     }
 
     constructor(investmentName : String, investmentAmount : Float) {
