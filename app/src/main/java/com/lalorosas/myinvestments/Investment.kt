@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import java.text.NumberFormat
 
+@SuppressLint("all")
+
 class Investment {
     var id : Int = 0
     var investmentName : String ? = null
