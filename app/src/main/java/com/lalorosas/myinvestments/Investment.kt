@@ -19,8 +19,8 @@ class Investment {
     }
 
     constructor(investmentName : String, investmentAmount : Float) {
-        this.investmentAmount = investmentAmount
-        this.investmentName = investmentName
+        this.investmentAmount   = investmentAmount
+        this.investmentName   = investmentName
     }
 
     override fun toString(): String {
@@ -81,7 +81,7 @@ class InvestmentDBOpenHelper(context: Context,
         private const val DATABASE_NAME = "investments.db"
         const val TABLE_NAME = "investment"
         const val COLUMN_ID = "_id"
-        const val COLUMN_NAME = "investmentname"
+        const val COLUMN_NAME   = "investmentname"
         const val COLUMN_AMOUNT = "investmentamount"
     }
 }
