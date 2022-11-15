@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import java.text.NumberFormat
 
-@SuppressLint("all")
+
 
 class Investment {
     var id : Int = 0
@@ -66,7 +66,7 @@ class InvestmentDBOpenHelper(context: Context,
         cursor!! .moveToFirst()
 
         val investments = ArrayList<Investment>()
-
+        @SuppressLint("all")
         while(cursor.moveToNext()) {
             val name = cursor.getString(cursor.getColumnIndex(COLUMN_NAME))
             val amount = cursor.getFloat(cursor.getColumnIndex(COLUMN_AMOUNT))
